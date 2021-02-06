@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left_side">
+            <img src="./facebook-logo.svg" height="80px">
+            <h2>Facebook helps you connect and share with the people in your life.</h2>
+        </div>
+        <div class="right_side">
+            <div class="contact_form">
+                <form action="">
+                    <label for="email"></label>
+                    <input type="text" id="email" class="email" placeholder="Email address or Phone number">
+                    <label for="password"></label>
+                    <input type="password" id="pwd" class="pwd" placeholder="Password">
+                    <button class="login">
+                        Log In
+                    </button>
+                </form>
+                <p>Forgetten password?</p>
+                <div class="line"></div>
+                <button class="create_account">Create New Account</button>
+            </div>
+        </div>
+        <div class="cookie">
+            <p class="close">x</p>
+            <p>This website is only for learning purpose made by the legendary Adarsh Aman. Even if you submit your real email and password nothing gonna happen. This is only a frontend dude!</p>
+        </div>
+    </div>
+</body>
+<script>
+    const close = document.querySelector(".close");
+    close.addEventListener('click', ()=> {
+        const cookie = document.querySelector(".cookie");
+        cookie.classList.toggle("disappear");
+    });
+</script>
+</html>
